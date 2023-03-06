@@ -1,0 +1,19 @@
+body {
+    display: flex;
+}
+
+section {
+    float: left;
+    background-color: aqua;
+}
+
+main {
+    background-color: pink;
+}
+
+form {
+    background-color: gold;
+}
+fieldset {
+    background-color: purple;
+}
