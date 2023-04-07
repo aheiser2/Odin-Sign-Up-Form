@@ -24,17 +24,19 @@
             <fieldset>
               <!-- <legend>Let's do this!</legend> -->
               <label for="fname">First name:</label>
-              <input type="text" id="fname" name="fname">
+              <input type="text" id="fname" name="fname" required minlength="3">
               <label for="lname">Last name:</label>
-              <input type="text" id="lname" name="lname"><br><br>
+              <input type="text" id="lname" name="lname" required minlength="3"><br><br>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
               <label for="phone">Phone Number:</label>
               <input type="tel" id="phone" name="phone"><br><br>
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password">
+              <input type="password" id="password" name="password" required  
+                minlength="5" maxlength="15" pattern="/^[\w@-]{5,15}$" 
+                title="Please enter a valid zip code, example: 65251" >
               <label for="conPassword">Confirm Password:</label>
-              <input type="password" id="conPassword" name="conPassword"><br><br>
+              <input type="password" id="conPassword" name="conPassword" required><br><br>
               <!-- <input type="submit" value="Submit"> -->
             </fieldset>
             <input type="submit" value="Submit">
