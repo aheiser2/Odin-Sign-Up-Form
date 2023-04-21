@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 body {
-    padding: auto;
+    /* padding: auto; */
     margin: auto;
     display: flex;
 }
@@ -36,3 +36,57 @@ form {
 fieldset {
     background-color: purple;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: auto
+}
+
+.child {
+    display: inline;
+    flex: 1; 
+    margin: 0 1em
+}
+
+/*validation styles*/
+
+input.valid {
+    border-color: greenyellow;
+}
+
+input.invalid {
+    border-color: orangered;
+}
+
+input + p {
+    font-family: arial;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: orange;
+    opacity: 0;
+    height: 0
+}
+
+input.invalid + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px
+}
+
+
+
+
+
+
