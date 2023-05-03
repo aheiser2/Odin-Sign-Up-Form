@@ -21,13 +21,22 @@ section {
     background-size: cover;
 }
 
-span {
-    /* background-size: contain;  */
+h1 {
+    margin: 100px auto;
     background-color: rgba(80, 80, 80, 0.2);
+    height: max-content;
+    width: 100%;
+}
+span {
+    background-size: contain; 
+
+    display: block;
+    /* background-color: rgba(80, 80, 80, 0.2); */
 }
 
 main {
     background-color: pink;
+    padding: 15px;
 }
 
 form {
@@ -35,6 +44,10 @@ form {
 }
 fieldset {
     background-color: purple;
+}
+
+footer {
+    background-color: aqua;
 }
 
 .row {
@@ -70,10 +83,10 @@ input.invalid {
 
 input + p {
     font-family: arial;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     text-align: center;
-    margin: 0 10px;
+    margin: 0;
     color: orange;
     opacity: 0;
     height: 0
@@ -82,7 +95,7 @@ input + p {
 input.invalid + p {
     opacity: 1;
     height: auto;
-    margin-bottom: 20px
+    margin-top: 10px
 }
 
 

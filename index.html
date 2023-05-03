@@ -9,7 +9,7 @@
 </head>
 <body>
     <section>
-        <h1><span>Bella Winter Guard</span></h1>
+        <h1><span>Bella</span><span>Winter</span><span>Guard</span></h1>
     </section>
     <main>
         <h2><p>Wouldn't you like to be a part of something amazing? You know you need
@@ -19,7 +19,7 @@
             <br>
             <p>You <em>know</em> you want to.</p>
         </h2>
-        <form action="/action_page.php">
+        <form>
             <legend>Let's do this!</legend>
             <fieldset>
                 <div class="row">
@@ -27,13 +27,14 @@
                         <div class="child">
                             <label for="fname">First name: * </label>
                             <input type="text" id="fname" name="fname" required minlength="3">
-                            <!-- <p>Testing</p> -->
+                            <p>Please only use letters</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="child">
                             <label for="lname">Last name: * </label>
                             <input type="text" id="lname" name="lname" required minlength="3">
+                            <p>Please only use letters</p>
                         </div>
                     </div>
                 </div>     
@@ -43,12 +44,13 @@
                         <div class="child">
                             <label for="email">Email: * </label>
                             <input type="email" id="email" name="email" required>
-                            <!-- <p>Testing 2</p> -->
+                            <p>Please enter a valid email format (****@***.***)</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="child"><label for="phone">Phone Number:</label>
                             <input type="tel" id="phone" name="phone">
+                            <p>Please only use numbers (no need for dashes)</p>
                         </div>
                     </div>
                 </div>  
@@ -60,19 +62,21 @@
                             <input type="password" id="password" name="password" required  
                             minlength="7" maxlength="18"  
                             title="Please enter a valid password" >
+                            <p>Please only use letters, numbers, @, -, !, #, %, and &</p>
                         </div>
                     </div>
                     <div class="column">
                         <div class="child">
                             <label for="conPassword">Confirm Password:</label>
                             <input type="password" id="conPassword" name="conPassword" required>
+                            <p>Passwords do not match!</p>
                         </div>
                     </div>
                 </div>  
               <br><br>
 
             </fieldset>
-            <input type="submit" value="Submit">
+            <button type="button" id="submitButton">Submit</button>
           </form> 
           <footer>
               <h4><p>Already have an account? <a href="/sign_in_page.html">Log in</a></p></h4>
@@ -96,9 +100,6 @@ Step 2: Gather Assets
 
 Step 3: Some Tips!
 
-    How you attack this project is mostly up to you, but it 
-    is wise to begin by scaffolding out the structure of the 
-    page, and then tackle the various sections one by one.
     The area behind the “ODIN” logo is a div that has a dark, 
     but semi-transparent background color. This enhances the 
     readability of the text against the busy background image.
@@ -115,9 +116,7 @@ Step 3: Some Tips!
     Do not worry about making your project look nice on mobile, 
     but DO resize your browser a little bit to make sure that 
     it’s not completely broken at different desktop resolutions.
-    Checking that the password fields match each other requires 
-    javascript. Try to implement this if you feel confident, 
-    otherwise just validate each field separately.
+    
 
 
 
